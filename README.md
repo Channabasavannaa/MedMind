@@ -13,14 +13,14 @@ This project demonstrates how **PEFT (*Parameter-Efficient Fine-Tuning*)** can r
 
 ---
 
-## **How did we solve this**
+## **Proposed solution**
 1. By using **LoRA**, we fine-tuned only the **adapter modules**, which are approximately **200–300 MB** in size. These adapters can be **easily merged** with the **base model** and **deployed locally**, enabling *efficient and cost-effective model hosting*.
 2. By **freezing the base model weights** and fine-tuning only the **LoRA adapter modules** (*Q and V modules*), the model is guided to learn **domain-specific patterns** without altering its **general knowledge**, which helps **reduce hallucinations** and improves **output reliability**.
 3. By choosing an appropriate **LoRA rank (*r*)** during fine-tuning, we significantly **minimized computational requirements** and **training costs by approximately 90%**, while maintaining **strong model performance**.
 
 ---
 
-## **Problems we faced**
+## **Problems faced**
 1. Finding **high-quality domain-specific data**
 2. **Model size** and **deployment challenges**
 3. Choosing **optimal LoRA hyperparameters** (*rank, alpha, target modules*)
@@ -36,7 +36,7 @@ This project demonstrates how **PEFT (*Parameter-Efficient Fine-Tuning*)** can r
  
 4. Cloud GPU - [RunPod](https://www.runpod.io/)
 
---
+---
 
 ## Results - 
 1. Reduced perplexity score from 12 to 7 after adding the LoRA adapter modules.
