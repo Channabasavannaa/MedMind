@@ -35,8 +35,42 @@ This project demonstrates how PEFT (Parameter-Efficient Fine-Tuning) can reduce 
   - <img src ="Images/Memory_usage.png" width="500">
 
 ## How to use this-
-```python
-def hello():
-    print("Hello, World!")
+- Step 01 - Install all the requirements in a suitable venv(python3.10 is better to use)
+  - ```python
+       !pip install requierements.txt
+- Step 02 - Import the required libriaries into the working env 
+  -  ```python
+        import torch
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+        from peft import PeftModel
+- Step 03 - Load the base model
+  - ```python
+       base_model_name = "mistralai/Mistral-7B-v0.1"   # replace if needed
+
+       model = AutoModelForCausalLM.from_pretrained(
+           base_model_name,
+           device_map="auto",
+           torch_dtype=torch.float16
+       )
+
+       tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+       tokenizer.pad_token = tokenizer.eos_token
+- Step 04 - Load the adapters and merge with the model
+  - ```python
+       lora_adapter_path = "Channabasavanna/mistral_medical_lora"  
+
+       model = PeftModel.from_pretrained(
+           model,
+    l      ora_adapter_path
+       )
+
+    model = model.merge_and_unload()
+
+    
+
+       
+
+       
+       
 
 
