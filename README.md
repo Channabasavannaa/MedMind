@@ -22,7 +22,7 @@ This project demonstrates how PEFT (Parameter-Efficient Fine-Tuning) can reduce 
 
 ## Specifactions- 
 1. Dataset -
-2. LoRA adapter config - (Images/Screenshot_2026-01-08_150339.png)
+2. LoRA adapter config - [](Images/Screenshot_2026-01-08_150339.png)
 3. Cloud GPU - [RunPod](https://www.runpod.io/)
 
 ##results - 
