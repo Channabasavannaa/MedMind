@@ -48,7 +48,7 @@ This project demonstrates how **PEFT (*Parameter-Efficient Fine-Tuning*)** can r
 ---
 
 ## How to use this-
-- Step 01 - Install all the requirements in a suitable venv(python3.10 is better to use)
+- Step 01 - Install all the requierements in a suitable venv(python3.10 is better to use)
   - ```python
        !pip install requierements.txt
 - Step 02 - Import the required libriaries into the working env 
