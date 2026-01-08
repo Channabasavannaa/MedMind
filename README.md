@@ -28,6 +28,11 @@ This project demonstrates how PEFT (Parameter-Efficient Fine-Tuning) can reduce 
  
 4. Cloud GPU - [RunPod](https://www.runpod.io/)
 
-##Results - 
+## Results - 
+1. Reduced perplexity score from 12 to 7 after adding the LoRA adapter modules.
+  - <img src"" width="500">
+2. Reduced GPU consumption by 85%
+  - <img src"" width="500">
+
 ##how to use this
 ##Finetuning Mistral 7B on a domain Specific Dataset
