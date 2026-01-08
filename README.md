@@ -74,7 +74,7 @@ This project demonstrates how **PEFT (*Parameter-Efficient Fine-Tuning*)** can r
 
        model = PeftModel.from_pretrained(
            model,
-    l      ora_adapter_path
+           lora_adapter_path
        )
 
     model = model.merge_and_unload()
