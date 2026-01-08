@@ -35,5 +35,8 @@ This project demonstrates how PEFT (Parameter-Efficient Fine-Tuning) can reduce 
   - <img src ="Images/Memory_usage.png" width="500">
 
 ## How to use this-
+```python
+def hello():
+    print("Hello, World!")
 
 
