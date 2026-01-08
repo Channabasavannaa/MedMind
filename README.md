@@ -22,12 +22,12 @@ This project demonstrates how PEFT (Parameter-Efficient Fine-Tuning) can reduce 
 
 ## Specifactions- 
 1. Dataset - <a href="https://www.kaggle.com/datasets/pythonafroz/medquad-medical-question-answer-for-ai-research">MedQuAD</a>
-2. Model - <a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3</a>
-2. LoRA adapter config -
-    <img src="Images/config.png" width="500">
+2. Model used - <a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3</a>
+3. - LoRA adapter config -
+     - <img src="Images/config.png" width="500">
  
 4. Cloud GPU - [RunPod](https://www.runpod.io/)
 
-##results - 
+##Results - 
 ##how to use this
 ##Finetuning Mistral 7B on a domain Specific Dataset
